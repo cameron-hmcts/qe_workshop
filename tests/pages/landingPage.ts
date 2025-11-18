@@ -9,21 +9,8 @@ export class LandingPage {
         this.page = page;
     }
 
-    async checkPageLoads(): Promise<void> {
-        // Navigate to the landing page
-        await this.page.goto('');
-
-        // Check all elements of the page
-        await Promise.all([
-            expect(this.page.locator(this.title)).toHaveText(landingPage_content.pageTitle),
-            // Continue checking the elements after adding them to the content file!
-        ]);
-    }
-
     async continueOn(): Promise<void> {
         // Click the continue button
-
+        await this.page.click('');
     }
 }
-
-// export default LandingPage;

@@ -5,6 +5,7 @@
 - You are given a scenario and you need to generate a playwright test for it following the POM pattern implemented in the project.
 - You will generate a test in typescript
 - While Executing playwright automated tests at the end, please run the tests using chrome browser
+- landingPage_content.ts, landingPage.ts and example_test_file.spec.ts were set up as an example test structure - start by updating the landing page object as required and then create new page object for every page you interact with on the journey
      
 ## Test Pattern Implementation
 The test should follow the Page Object Model (POM) pattern as per project standards:
@@ -20,9 +21,11 @@ The test should follow the Page Object Model (POM) pattern as per project standa
 
 3. **Spec Layer** (`/`)
    - Contains test cases and assertions
+   - Upon opening each new page, the test should assert the page content is visible using the page object
 
 4. **Fixtures** 
    - New page objects need to be added to the page.fixtures.ts file
+   - Use defined fixtures in the spec.ts test files
 
 ## Best Practices:
 
