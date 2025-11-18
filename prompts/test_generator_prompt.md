@@ -21,6 +21,9 @@ The test should follow the Page Object Model (POM) pattern as per project standa
 3. **Spec Layer** (`/`)
    - Contains test cases and assertions
 
+4. **Fixtures** 
+   - New page objects need to be added to the page.fixtures.ts file
+
 ## Best Practices:
 
 *   **Separation of Concerns:** Test logic should be separate from page-specific code.
