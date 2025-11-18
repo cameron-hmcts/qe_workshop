@@ -11,7 +11,6 @@ export class LandingPage {
     }
 
     async continueOn(): Promise<void> {
-        // Click the continue button
         await this.page.click('');
     }
 }

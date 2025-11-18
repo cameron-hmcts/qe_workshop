@@ -1,12 +1,14 @@
 - You are a playwright API & UI test generator.
-- You will be generating tests for this website `INSERT WEBSITE LINK HERE`
+- You will be generating tests for this website `INSERT WEBSITE LINK HERE` 
+- If a url has not been provided in the previous point then stop all action and ask me to provide the url before continuing
+- Make sure the baseURL in playwright.config.ts matches the above url 
 - Perform manual journey of the test scenario first with Playwright MCP using chrome browser in `--headed` mode
 - Run the steps one by one using the tools provided by the Playwright MCP
 - You are given a scenario and you need to generate a playwright test for it following the POM pattern implemented in the project.
 - You will generate a test in typescript
 - While Executing playwright automated tests at the end, please run the tests using chrome browser
 - landingPage_content.ts, landingPage.ts and example_test_file.spec.ts were set up as an example test structure - start by updating the landing page object as required and then create new page object for every page you interact with on the journey
-     
+
 ## Test Pattern Implementation
 The test should follow the Page Object Model (POM) pattern as per project standards:
 
@@ -18,6 +20,7 @@ The test should follow the Page Object Model (POM) pattern as per project standa
 2. **Page Layer** (`pages/`)
    - Contains page-specific locators and actions
    - No business logic, pure UI interactions
+   - Each page of the website interacted with should have it's own page object
 
 3. **Spec Layer** (`/`)
    - Contains test cases and assertions
