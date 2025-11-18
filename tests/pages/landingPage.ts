@@ -1,31 +1,29 @@
-import { Page } from 'playwright';
-import {expect} from "@playwright/test";
+import { Page, expect } from '@playwright/test';
 import landingPage_content from "../content/landingPage_content";
 
-class LandingPage {
-    private readonly title: string;
-    private readonly text: string;
+export class LandingPage {
+    private readonly page: Page;
+    private readonly title = 'h1';
 
-    constructor() {
-        this.title = `.govuk-heading-xl`
-        // this.text =
+    constructor(page: Page) {
+        this.page = page;
     }
 
-    async checkPageLoads(page: Page): Promise<void> {
+    async checkPageLoads(): Promise<void> {
         // Navigate to the landing page
-        await page.goto('');
+        await this.page.goto('');
 
         // Check all elements of the page
         await Promise.all([
-            expect(page.locator(this.title)).toHaveText(landingPage_content.pageTitle),
+            expect(this.page.locator(this.title)).toHaveText(landingPage_content.pageTitle),
             // Continue checking the elements after adding them to the content file!
         ]);
     }
 
-    async continueOn(page: Page): Promise<void> {
+    async continueOn(): Promise<void> {
         // Click the continue button
 
     }
 }
 
-export default LandingPage;
+// export default LandingPage;

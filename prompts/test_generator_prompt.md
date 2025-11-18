@@ -18,7 +18,7 @@ The test should follow the Page Object Model (POM) pattern as per project standa
    - Contains page-specific locators and actions
    - No business logic, pure UI interactions
 
-3. **Spec Layer** (`e2e/`)
+3. **Spec Layer** (`/`)
    - Contains test cases and assertions
 
 ## Best Practices:

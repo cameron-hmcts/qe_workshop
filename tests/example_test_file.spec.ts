@@ -1,9 +1,7 @@
-import {test} from "@playwright/test";
-import LandingPage from "./pages/landingPage";
+import {test} from "./fixtures";
 
-test(`example test`, async ({ page }): Promise<void> => {
-    const landingPage: LandingPage = new LandingPage();
-    await landingPage.checkPageLoads(page);
-    await landingPage.continueOn(page);
+test(`example test`, async ({ landingPage }): Promise<void> => {
+    await landingPage.checkPageLoads();
+    await landingPage.continueOn();
     // Continue
 });
