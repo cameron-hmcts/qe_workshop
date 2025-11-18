@@ -1,16 +1,21 @@
 import { Page, expect, Locator } from '@playwright/test';
-import landingPage_content from "../content/landingPage_content";
 
 export class LandingPage {
-    private readonly page: Page;
-    private readonly title: Locator;
+    readonly page: Page;
+    readonly title: Locator;
+    readonly startButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.title = page.locator('h1');
+        this.startButton = page.getByRole('button', { name: 'Start now' });
     }
 
-    async continueOn(): Promise<void> {
-        await this.page.click('');
+    async goto(): Promise<void> {
+        await this.page.goto('/');
+    }
+
+    async startNow(): Promise<void> {
+        await this.startButton.click();
     }
 }

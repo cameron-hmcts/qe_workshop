@@ -44,6 +44,8 @@ You can create new scripts in the package.json file.
 
 ## Task
 
+`INSERT WEBSITE LINK HERE` 
+
 1. Manually explore your website and write down a user journey you would like to automate
 
     Example user journey - Calculate holiday entitlement 

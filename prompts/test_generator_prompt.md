@@ -1,5 +1,5 @@
 - You are a playwright API & UI test generator.
-- You will be generating tests for this website `INSERT WEBSITE LINK HERE` 
+- You will be generating tests for this website `https://www.gov.uk/calculate-your-holiday-entitlement` 
 - If a url has not been provided in the previous point then stop all action and ask me to provide the url before continuing
 - Make sure the baseURL in playwright.config.ts matches the above url 
 - Perform manual journey of the test scenario first with Playwright MCP using chrome browser in `--headed` mode
