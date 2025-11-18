@@ -12,7 +12,6 @@ Any errors during setup - please ask for help from Cameron, Abi, Johnny or Jessi
 Run these commands in your terminal:
 
 Yarn - `brew install yarn`
-
 Node - `brew install node`
 
 `yarn setup` 
@@ -41,3 +40,21 @@ You are now set up!
 `yarn playwright test` will run your tests in all browsers
 
 You can create new scripts in the package.json file.
+
+
+## Task
+
+1. Manually explore your website and write down a user journey you would like to automate
+
+    Example user journey - Calculate holiday entitlement 
+    1. Open website
+    2. landing page - click start now
+    3. irregular hours page - Click no - continue
+    4. holiday entitlement based on page - Click days worked per week - Continue
+    5. work out holiday for page - Click for a full leave year - continue
+    6. days worked page - Enter 4 - continue
+    7. Check final page is correct with 22.4 days holiday
+
+2. Start gemini by running `gemini` in the terminal in the root of your project
+
+3. Prompt gemini with `@prompts/test_generator_prompt.md ` + your user journey
