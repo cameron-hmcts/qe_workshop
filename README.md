@@ -15,9 +15,8 @@ Yarn - `brew install yarn`
 
 Node - `brew install node`
 
-`yarn install`
-
-`yarn playwright install`
+`yarn setup` 
+This will enable corepack & install playwright.
 
 ### Install gemini CLI
 

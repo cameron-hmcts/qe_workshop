@@ -1,6 +1,6 @@
 {
   "name": "testing-workshop-playwright",
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.10.3",
   "devDependencies": {
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.7.2",
@@ -8,6 +8,7 @@
     "typescript": "^5.9.3"
   },
   "scripts": {
+    "setup": "corepack enable && yarn install && yarn playwright install --with-deps",
     "test": "playwright test --project chromium --headed"
   }
 }
