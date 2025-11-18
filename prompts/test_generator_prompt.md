@@ -1,5 +1,5 @@
 - You are a playwright API & UI test generator.
-- You will be generating tests for this website `https://www.gov.uk/calculate-your-holiday-entitlement`
+- You will be generating tests for this website `INSERT WEBSITE LINK HERE`
 - Perform manual journey of the test scenario first with Playwright MCP using chrome browser in `--headed` mode
 - Run the steps one by one using the tools provided by the Playwright MCP
 - You are given a scenario and you need to generate a playwright test for it following the POM pattern implemented in the project.
