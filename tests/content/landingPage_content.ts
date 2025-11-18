@@ -1,6 +1,8 @@
 const landingPage_content = {
-    pageTitle: "Landing Page Title",
-    // Continue
+    pageHeading: "Calculate holiday entitlement",
+    startNowButtonText: "Start now",
+    acceptCookiesButtonText: "Accept additional cookies",
+    cookieBannerHeading: "Cookies on GOV.UK",
 } as const;
 
 export default landingPage_content
