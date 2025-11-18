@@ -8,6 +8,7 @@
     "typescript": "^5.9.3"
   },
   "scripts": {
+    "setup": "corepack enable && yarn install && yarn playwright install --with-deps",
     "test": "playwright test --project chromium --headed"
   }
 }
