@@ -23,6 +23,10 @@ Node - `brew install node`
 
 run `brew install gemini-cli`
 
+run `gemini` to start the cli tool
+
+You will need to Login with Google using your Solirius account
+
 ### Install Playwright MCP
 
 Go to extensions tab in VSCode and search `@mcp playwright`
