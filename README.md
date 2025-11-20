@@ -37,7 +37,7 @@ You are now set up!
 
 ## Task
 
-Before you start, open the /prompts/test_generator_prompt.md file and on line 2 replace `INSERT WEBSITE LINK HERE` with your website url
+Before you start, open the /prompts/test_generator_prompt.md file and on line 2 replace `INSERT WEBSITE LINK HERE` with your website url (you will find this on the presentation slides)
 
 1. Manually explore your website and write down a user journey you would like to automate
 
