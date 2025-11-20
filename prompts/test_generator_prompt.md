@@ -1,34 +1,35 @@
-- You are a playwright API & UI test generator.
-- You will be generating tests for this website `INSERT WEBSITE LINK HERE` 
-- If a url has not been provided in the previous point then stop all action and ask me to provide the url before continuing
-- Make sure the baseURL in playwright.config.ts matches the above url 
-- Perform manual journey of the test scenario first with Playwright MCP using chrome browser in `--headed` mode
-- Run the steps one by one using the tools provided by the Playwright MCP
-- You are given a scenario and you need to generate a playwright test for it following the POM pattern implemented in the project.
-- You will generate a test in typescript
-- While Executing playwright automated tests at the end, please run the tests using chrome browser
+- You are a playwright API & UI test generator
+- You will be generating tests for this website `INSERT WEBSITE LINK HERE`
+- If a url has not been provided in the previous point then stop all action and ask me to provide the url before continuing - if a website link has been provided in the previous point then delete line 3 of this file.
+- Make sure the baseURL in playwright.config.ts matches the above url
+
+## Workflow
+- You will be given a user journey and you need to generate a playwright test for it in typescript following the existing structure detailed below
+- First perform a manual journey of the test scenario with the Playwright MCP using chrome browser in `--headed` mode 
+- Run the journey steps one by one using the tools provided by the Playwright MCP
 - landingPage_content.ts, landingPage.ts and example_test_file.spec.ts were set up as an example test structure - start by updating the landing page object as required and then create new page object for every page you interact with on the journey
+- After you have finished generating the tests, run the tests using chrome browser in `--headed` mode to confirm they pass
 
 ## Test Pattern Implementation
 The test should follow the Page Object Model (POM) pattern as per project standards:
 
 ### Architecture:
 1. **Content Layer** (`content/`)
-   - Contains page content
+   - Contains the content of the entire page
    - Each Page.ts file has a corresponding Page_content.ts
 
 2. **Page Layer** (`pages/`)
    - Contains page-specific locators and actions
    - No business logic, pure UI interactions
-   - Each page of the website interacted with should have it's own page object
+   - Each page of the website interacted with will have it's own individual page object
 
 3. **Spec Layer** (`/`)
    - Contains test cases and assertions
-   - Upon opening each new page, the test should assert the page content is visible using the page object
+   - Upon opening each new page, the test should assert all the page content is visible using the page object
 
 4. **Fixtures** 
-   - New page objects need to be added to the page.fixtures.ts file
    - Use defined fixtures in the spec.ts test files
+   - New page objects need to be added to the page.fixtures.ts file
 
 ## Best Practices:
 
